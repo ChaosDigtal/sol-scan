@@ -2,11 +2,11 @@ const dotenv = require('dotenv');
 const { Connection, PublicKey } = require('@solana/web3.js');
 const { Decimal } = require('decimal.js');
 
+dotenv.config();
+
 const ALCHEMY_API_URL = `https://solana-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`;
 
 const connection = new Connection(ALCHEMY_API_URL);
-
-dotenv.config();
 
 async function getTokenMetadata(tokenAddress) {
     const tokenPublicKey = new PublicKey(tokenAddress);
