@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@metaplex-foundation/js": "^0.20.1",
+    "@solana/spl-token": "^0.4.7",
     "@solana/web3.js": "^1.94.0",
+    "alchemy-sdk": "^3.3.1",
+    "axios": "^1.7.2",
     "decimal.js": "^10.4.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "web3": "^4.10.0"
   }
 }
